@@ -46,11 +46,11 @@ red "███  ███ ██ ▀██▀█ ██ ██ ██ ██▄ 
 clone_repo() {
 if [ -d AluminiumOS ]; then
  info "Cloning on ALOS folder due to stock folder being occupied"
- git clone --recurse-submodules https://github.com/BasGame1/AluminiumOS.git ALOS --depth=1
+ git clone --recurse-submodules https://github.com/DMKha241/AluminiumOS.git ALOS --depth=1
  DIR=alos
 else
  info "Cloning from github"
- git clone --recurse-submodules https://github.com/BasGame1/AluminiumOS.git --depth=1
+ git clone --recurse-submodules https://github.com/DMKha241/AluminiumOS.git --depth=1
  DIR=AluminiumOS
 fi
 }

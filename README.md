@@ -52,7 +52,7 @@
 
 ## 📥 Installation
 
-* Copy or download the [install.sh file](https://raw.githubusercontent.com/BasGame1/AluminiumOS/refs/heads/DEV/install.sh) and execute it or clone the repo with submodules and install qemu manually
+* Copy or download the [install.sh file](https://raw.githubusercontent.com/DMKha241/AluminiumOS/refs/heads/DEV/install.sh) and execute it or clone the repo with submodules and install qemu manually
 
 ---
 
