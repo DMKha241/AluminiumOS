@@ -119,18 +119,18 @@ install_qemu
 check_git
 clone_repo
 success "All done!"
-read -p "Do you want to init the init script now? [y/N]" OPTION
-case $OPTION in 
-y|Y)
- info "Selected yes, Executing init script now"
- ./$DIR/init.sh
-;;
-n|N)
- info "Selected no, exiting now"
- exit
-;;
-*)
- error "Unrecognized option, assuming no"
- exit
-;;
+read -r -p "Do you want to init the init script now? [y/N] " OPTION
+case "$OPTION" in 
+    y|Y)
+        info "Selected yes, Executing init script now"
+        ./"$DIR"/init.sh
+        ;;
+    n|N)
+        info "Selected no, exiting now"
+        exit 0
+        ;;
+    *)
+        error "Unrecognized option, assuming no"
+        exit 1
+        ;;
 esac
